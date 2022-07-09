@@ -6,14 +6,25 @@ const mobNav = document.getElementById('menuList');
 const icon = document.querySelector('.menumenu');
 const qouteButton = document.getElementById('quoteBtn');
 const quoteWord = document.getElementById('qouteText');
-const quoteArray = ["'Love doesn\’t make the world go round. Love is what makes the ride worthwhile.'", "'To be fully seen by somebody, then, and be loved anyhow—this is a human offering that can border on miraculous.'", "'In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.'", "'I love you not only for what you are, but for what I am when I am with you.'"];
+const quoteArray = ["'Gravitation is not responsible for people falling in love.   —Albert Einstein'",
+"'Love doesn\’t make the world go round. Love is what makes the ride worthwhile.'",
+ "'To be fully seen by somebody, then, and be loved anyhow—this is a human offering that can border on miraculous.'", 
+ "'In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.'",
+  "'I love you not only for what you are, but for what I am when I am with you.'",
+   "'Love makes everything work, so learn how to  love.'", 
+   "'I am my beloved and my beloved is mine.—Song of Solomon 6:3'",
+    "'The highest happiness on earth is the happiness of marriage.'",
+    "'True love stories never have endings.'",
+    "'You don\’t marry the person you can live with—you marry the person you can\’t live without.'",
+"'What lies behind us, and what lies before us are tiny matters compared to what lies within us.'",
+"'Love never gives up, never loses faith, is always hopeful and endures through every circumstance. —Corinthians 13:7'"];
 
 
 qouteButton.addEventListener("click", () => {
       setInterval(function(){
             let randomquote = Math.floor(Math.random() * (quoteArray.length));
             quoteWord.innerHTML = quoteArray[randomquote];
-      }, 2000);
+      }, 5000);
      
 });
 // const modcount = document.querySelector('.countdowwwwn');
@@ -80,6 +91,10 @@ let intervalSetter = setInterval(function () {
   }
 
 });
+
+
+
+
 
 
 

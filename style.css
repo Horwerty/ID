@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=EB+Garamond:ital@1&family=Inconsolata:wght@300&family=Lato:ital,wght@0,400;1,900&family=Noto+Serif:ital,wght@1,700&family=Permanent+Marker&family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=EB+Garamond:ital@1&family=Inconsolata:wght@300&family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;1,900&family=Lobster&family=Noto+Serif:ital,wght@1,700&family=Permanent+Marker&family=Smooch&family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
 *{
       padding: 0;
       margin: 0;
@@ -16,6 +17,19 @@ body {
       width: 480px;
       margin: auto;
       /* border: solid black; */
+}
+
+body::-webkit-scrollbar {
+      width: 1em;
+}
+
+body::-webkit-scrollbar-track{
+      box-shadow:  inset 0 0 6px #B76E79;
+}
+
+body::-webkit-scrollbar-thumb {
+      background-color: darkgray;
+      outline: 1px solid slategrey;
 }
 
 h3, h4 {
@@ -96,7 +110,7 @@ a:hover{
       background-color: #B76E79;
       opacity: 0.9;
       position: fixed;
-      top: 60px;
+      top: 50px;
       right: -100%; 
       transition: 1s linear;
       display: flex;
@@ -120,8 +134,22 @@ a:hover{
       opacity: 0.7;
 } */
 
+.heroQuote {
+      background-image: linear-gradient( rgba(183, 110, 121, 0.628), rgba(232, 163, 173, 0.653)), url(./img/flowerBg.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      text-align: center;
+      display: block;
+}
+
 .herotest h3 {
-      padding-top: 10px;
+      padding-top: 5rem;
+      color: red;
+}
+
+#qouteText {
+      padding: 5px 4rem;
+      color: navy;
 }
 
 #quoteBtn {
@@ -154,7 +182,8 @@ a:hover{
 } */
 
 .heroimage img {
-      max-width: 100%;
+      width: 100%;
+      /* height: 120vh; */
       /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
       /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
       /* position: relative; */
@@ -173,9 +202,6 @@ a:hover{
       position: absolute;
 } */
 
-.heroQuote {
-      text-align: center;
-}
 
 .modals {
       top: 87px;
@@ -235,16 +261,16 @@ a:hover{
 
 .modals h3 {
       color: #fff;
-      animation: rotate 1s 1s  infinite alternate;
+      animation: rotate 2s 3s  alternate;
 }
 
 @keyframes rotate {
       0% {
-            transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+            transform: rotateX(180deg) rotateY(90deg) rotateZ(90deg);
       }
 
       100% {
-            transform: rotateX(-45deg) rotateY(-45deg) rotateZ(-45deg);
+            transform: rotateX(-180deg) rotateY(-90deg) rotateZ(-90deg);
       }
 }
 
@@ -364,16 +390,34 @@ a:hover{
       }
 } */
 
-.pix1 img {
-      max-width: 100%;
-      /* object-fit: cover; */
+.swiper {
+      height: 80vh;
+      overflow-y: auto;
 }
+
+.swiper img {
+      width: 100%;
+      /* height: 100vh; */
+      object-fit: contain;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+      height: 10px;
+      color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+      background: #fff;
+}
+
 .aboutText img {
       width: 30px;
 }
 
 .aboutText {
       text-align: center;
+      background-image: linear-gradient(rgba(152, 102, 110, 0.744), rgba(159, 94, 104, 0.933)), url(./img/flowerBg.jpg);
+      background-size: cover;
 }
 
 .aboutText h5 {
@@ -445,6 +489,41 @@ a:hover{
       margin-top: 3px; 
 }
 
+#ifeoluwa, #ade {
+      box-shadow: 2px 3px 4px black;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+}
+
+.firstdate  p, .engagement p, .meeting p {
+      padding: 5px;
+      font-size: 0.8rem;
+      font-family: 'Edu TAS Beginner', cursive;
+      background-color: #f6eed7;
+      color: navy;
+}
+
+#pDiv {
+      box-shadow: 2px 3px 4px black;
+      border: none;
+      margin-top: 10px;
+}
+
+.hline {
+      width: 60px;
+      height: 2px;
+      background-color: navy;
+      margin-left: 13rem;
+}
+
+#midline {
+      width: 22rem;
+      height: 1px;
+      background-color: #B76E79;
+      margin-left: 3.5rem;
+}
 
 .meeting img,
 .firstdate img,
@@ -579,7 +658,17 @@ a:hover{
       /* height: 170px; */
       font-size: 1.3rem;
       margin: 5px;
+    
 }
+
+#engage:hover,
+#church:hover,
+#reception:hover {
+      transition: all 2s ease-in-out;
+      transform: scaleX(1.04);
+}
+
+
 
 #church h5,
 #engage h5,
@@ -763,27 +852,47 @@ iframe {
             text-decoration: underline;
       }
 
+      .heroQuote {
+            background-image: linear-gradient( rgba(183, 110, 121, 0.628), rgba(232, 163, 173, 0.653)), url(./img/flowerBg.jpg);
+            background-repeat: no-repeat;
+            background-size:contain;
+            text-align: center;
+      }
+
       #quoteBtn {
             margin-bottom: 0;
             margin-top: .2rem;
+      }
+
+      #qouteText {
+            font-size: 25px;
+            font-weight: 300;
       }
 
       .heroDiv {
             display: block;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            height: 80vh;
+            overflow-y: hidden;
       }
 
-      .heroQuote {
+      /* .heroQuote {
             margin-top: 2.5rem;
-      }
+      } */
 
       .herotest h3 {
-            padding-top: 5px;
+            padding-top: 5rem;
+            font-size: 2rem;
       }
  
       /* .heroimage {
-            padding-left: 10rem;
+            width: 10vh;
+      } */
+
+      /* .pix1 img {
+            width: 100%;
+            height: 60vh;
       } */
 
       .modals {
@@ -812,6 +921,12 @@ iframe {
 
       .modals > #closeBtn {
             display: none;
+      }
+
+      .swiper-slide {
+            max-width: 100%;
+            /* height: 100vh; */
+            /* object-fit: contain; */
       }
 
       .aboutText {
@@ -843,9 +958,25 @@ iframe {
             margin-top: 4rem;
       }
 
-      .firstdate  p {
-            padding: 0;
-            font-size: 1rem;
+      .firstdate  p, .engagement p, .meeting p {
+            padding: 3px;
+            font-size: 0.5rem;
+      }
+
+      .ifeoluwa p {
+            padding: 5rem 5px;
+      }
+
+      .doyin p {
+            padding: 3.5rem 5px;
+      }
+
+      .ade p {
+            padding: 6rem 5px;
+      }
+
+      .ife p {
+            padding: 20px 5px;
       }
 
       .engagement {
@@ -856,6 +987,20 @@ iframe {
       .firstdate img,
       .meeting img  {
             width:100%;
+            height: 50vh;
+      }
+
+
+      #ifeoluwa {
+            box-shadow: 2px 3px 4px black;
+            border: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 5px;
+      }
+
+      #ifeoluwa img, #ade img {
+            width: 30vh;
       }
 
      
@@ -864,6 +1009,35 @@ iframe {
       .engagement {
             box-shadow: 2px 4px 3px black;
             height: 350px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            
+      }
+
+      .meeting::-webkit-scrollbar,
+      .firstdate::-webkit-scrollbar,
+      .engagement::-webkit-scrollbar {
+            width: 10px;
+      }
+      
+      .meeting:-webkit-scrollbar-track,
+      .firstdate:-webkit-scrollbar-track,
+      .engagement::-webkit-scrollbar-track{
+            box-shadow:  inset 0 0 6px #B76E79;
+      }
+      
+      .meeting::-webkit-scrollbar-thumb,
+      .firstdate::-webkit-scrollbar-thumb,
+      .engagement::-webkit-scrollbar-thumb {
+            background-color: darkgray;
+            outline: 1px solid slategrey;
+      }
+
+      .hline {
+            width: 50px;
+            height: 2px;
+            background-color: navy;
+            margin-left: 6rem;
       }
 
       .eventCards {
@@ -953,6 +1127,11 @@ iframe {
             flex-direction: column;
             /* grid-template-columns: 1fr 1fr; */
       }
+      #midline {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+      }
 
       #maps {
             background-color: navy;
@@ -971,9 +1150,11 @@ iframe {
       }
       
       #midPix img{
-            width: 760px;
+            max-width: 100%;
+            /* height: 1500px; */
             display: block;
             margin: 0;
+            object-fit: contain;
       }
       
       #lowerPix {
@@ -984,8 +1165,10 @@ iframe {
       
       #lowerPix img {
             width: 108.3px;
+            height: 230px;
             cursor: pointer;
             transition: 0.3s;
+            object-fit: cover;
       }
       
       #lowerPix img:hover{
@@ -994,8 +1177,11 @@ iframe {
       
       #upperPix img {
             width: 108.3px;
+            height: 230px;
             cursor: pointer;
-            transition: .3s;     
+            transition: .3s;
+            image-rendering: auto;
+            object-fit: cover;     
       }
       
       #upperPix img:hover{
@@ -1004,9 +1190,9 @@ iframe {
       }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
       body {
-            width: 1020px; 
+            width: 768px; 
             margin: 0 auto;
             /* border: solid black; */
       } 
@@ -1019,6 +1205,17 @@ iframe {
       .logo img {
             width: 37px;
             height: 37px;
+      }
+
+      .swiper {
+            /* height: 80vh; */
+            overflow-x: hidden;
+      }
+      
+      .swiper-slide {
+            max-width: 100%;
+            /* height: 100vh; */
+            /* object-fit: contain; */
       }
      
       .aboutUs {
@@ -1057,13 +1254,13 @@ iframe {
             list-style: none;
             display: inline-block;
             cursor: pointer;
-            padding-right: 15px;
+            padding-right: 10px;
       }
 
       nav li a {
             text-decoration: none;
             color: #fff;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-family: 'Lobster', cursive;
       }
 
@@ -1072,6 +1269,10 @@ iframe {
             transition: all ease .3s;
             color:rgb(235,180,72);
             text-decoration: underline;
+      }
+
+      .herotest {
+            padding-top:4.5rem ;
       }
 
       #quoteBtn {
@@ -1085,9 +1286,7 @@ iframe {
             grid-template-columns: 1fr 1fr;
       }
 
-      .heroQuote {
-            margin-top: 2.5rem;
-      }
+
 
       .herotest h3 {
             padding-top: 5px;
@@ -1102,7 +1301,7 @@ iframe {
             border: none;
             box-shadow: 2px 3px 3px black;
             display: block;
-            margin-left: 300px;
+            margin-left: 155px;
             background: #B76E79;
             border-radius: 10px;
             display: none;
@@ -1154,9 +1353,400 @@ iframe {
             margin-top: 4rem;
       }
 
-      .firstdate  p {
+      /* .firstdate  p {
             padding: 0;
             font-size: 1rem;
+      } */
+
+      #ifeoluwa img {
+            width: 30vh;
+      }
+
+      .firstdate  p, .engagement p, .meeting p {
+            padding: 3px;
+            font-size: 0.5rem;
+      }
+
+      .ifeoluwa p, .ade p {
+            padding-top: 2rem;
+      }
+
+      .ifeoluwa p {
+            padding: 5rem 5px;
+      }
+
+      .doyin p {
+            padding: 3.5rem 5px;
+      }
+
+      .ade p {
+            padding: 6rem 5px;
+      }
+
+      .ife p {
+            padding: 20px 5px;
+      } 
+
+      
+
+      .engagement {
+            margin-top: 8rem;
+      }
+
+      .engagement img,
+      .firstdate img,
+      .meeting img  {
+            width:100%;
+      }
+
+     
+      .meeting,
+      .firstdate,
+      .engagement {
+            box-shadow: 2px 4px 3px black;
+            height: 350px;
+            
+      }
+
+      .eventCards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 10px 0;
+            padding: 5px;
+      }
+
+      .eventCards h4 {
+            text-align: center;
+            text-decoration: underline;
+      }
+
+      .bx-church,
+      .bxs-location-plus,
+      .bxs-watch {
+            font-size: 1.7rem;
+      }
+
+      #engage,
+      #church,
+      #reception {
+            width: 247px;
+            box-shadow: 4px 7px 8px black;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius:15px ;
+            background-color: #fff;
+            /* height: 170px; */
+            font-size: 1.3rem;
+            margin: 3px;
+      }
+
+      
+
+      #schedules {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background-color:navy;
+            color: #fff;
+            height: 5rem;
+      }
+
+      .date {
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: 'Lobster', cursive;
+      }
+
+     .countdown {
+            padding-top: 20px;
+            font-family: 'Lobster', cursive;
+      }
+
+      .countdown h5 {
+            font-size: 1.2rem;
+      }
+
+      .time {
+            font-size: 1.4rem;
+            display: flex;
+            padding-left: 20px;
+      }
+
+      #ourColor > h2 {
+            text-align: center;
+            font-size: 1.1rem;
+      }
+
+      #gallery {
+            /* height: 150px; */
+            background-color:#B76E79;
+            text-align: center;
+      }
+
+      #midline {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+      }
+
+      #galImage{
+            width: 30px;
+      }
+
+      #gallery h5 {
+            font-family: 'Smooch', cursive;
+            color:rgb(235,180,72);  
+      }
+
+      .eventColor {
+            display: flex;
+            flex-direction: column;
+            /* grid-template-columns: 1fr 1fr; */
+      }
+
+      #maps {
+            background-color: navy;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+
+      #upperPix {
+            display: flex;
+            justify-content: center;
+            padding-top: 0;
+      }
+      
+      #midPix {
+            justify-content: center;
+      }
+      
+      #midPix img{
+            width: 1020px;
+            display: block;
+            margin: 0;
+      }
+      
+      #lowerPix {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 0;
+      }
+      
+      #lowerPix img {
+            width: 19.2vh;
+            cursor: pointer;
+            transition: 0.3s;
+      }
+      
+      #lowerPix img:hover{
+            transform: translateY(-10px);
+      }
+      
+      #upperPix img {
+            width: 19.2vh;
+            cursor: pointer;
+            transition: .3s;     
+      }
+      
+      #upperPix img:hover{
+            transform: translateY(10px);
+            opacity: 0.6;
+      }
+}
+
+@media screen and (min-width: 1025px) {
+      body {
+            width: 1025px; 
+            margin: 0 auto;
+            /* border: solid black; */
+      } 
+
+      p {
+            font-family: 'Tapestry', Lobster;
+            padding: 10px 15px;
+      }
+
+      .logo img {
+            width: 57px;
+            height: 47px;
+      }
+     
+      .aboutUs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:#B76E79;
+            color: #fff;
+      }
+
+      .headList{
+            background: #B76E79;
+            /* position: fixed; */
+            padding: 30px;
+      }
+
+      .menuList {
+            display: inline-block;
+            width: 65%;
+            height: 5vh;
+            z-index: 9;
+            background-color: #B76E79;
+            position:relative;
+            top: 0;
+            left: 0; 
+            transition: none;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+      }
+
+      .menuIcon {
+            display: none;
+      }
+
+      nav li {
+            list-style: none;
+            display: inline-block;
+            cursor: pointer;
+            padding-right: 15px;
+      }
+
+      nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            font-family: 'Lobster', cursive;
+      }
+
+      nav li a:hover {
+            transform:scaleX(1.9);
+            transition: all ease .3s;
+            color:rgb(235,180,72);
+            text-decoration: underline;
+      }
+
+      #quoteBtn {
+            width: 8rem;
+            margin-bottom: 0;
+            margin-top: 3rem;
+      }
+
+      .heroDiv {
+            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+
+     .heroQuote {
+            padding-top: 4rem;
+     }
+
+      .herotest h3 {
+            padding-top: 5px;
+      }
+ 
+      /* .heroimage {
+            padding-left: 10rem;
+      } */
+
+      .modals {
+            width: 520px;
+            border: none;
+            box-shadow: 2px 3px 3px black;
+            display: block;
+            margin-left: 255px;
+            background: #B76E79;
+            border-radius: 10px;
+            display: none;
+            opacity: 0.9;
+      }
+
+      .modals > #close {
+            display:block;
+            background: red;
+            color: #fff;
+            border: none;
+            margin-left: 490px;
+            width: 30px;
+            border-top-right-radius:10px ;
+            font-size: 2rem;
+            cursor: pointer;
+      }
+
+      .modals > #closeBtn {
+            display: none;
+      }
+
+      .swiper-slide {
+            max-width: 100%;
+            /* height: 100vh; */
+            /* object-fit: contain; */
+      }
+
+      .aboutText {
+            display: block;
+      }
+
+      .aboutText {
+            text-align: center;
+            margin-top: 2px;
+      }
+
+      .readMoreBtn {
+            border: none;
+            border-radius: 15px;
+            width: 7rem;
+            height: 1.5rem;
+            transition: all ease .55ms;
+            margin-bottom: 0;
+      }
+
+      #relCard {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 0;
+            /* display: block; */
+      }
+
+      .firstdate {
+            margin-top: 4rem;
+      }
+
+      .firstdate  p, .engagement p, .meeting p {
+            padding: 3px;
+            font-size: 0.68rem;
+            background-color: #f6eed7;
+      }
+
+      /* .ifeoluwa p, .ade p {
+            padding-top: 1rem;
+            font-size: 0.9rem;
+            background-color: #f6eed7;
+      } */
+
+      /* .ifeoluwa p, .ade p {
+            padding-top: 2rem;
+      } */
+
+      .ifeoluwa p {
+            padding: 4rem 5px;
+            font-size: 0.7rem;
+      }
+
+      .doyin p {
+            padding: 4.2rem 5px;
+            font-size: 0.6rem;
+      }
+
+      .ade p {
+            padding: 6.4rem 5px;
+            font-size: 0.7rem;
+      }
+
+      .ife p {
+            padding: 19px 5px;
+            font-size: 0.6rem;
+      } 
+
+      #ifeoluwa img {
+            width: 29vh;
       }
 
       .engagement {
@@ -1175,6 +1765,7 @@ iframe {
       .engagement {
             box-shadow: 2px 4px 3px black;
             height: 350px;
+            scrollbar-width: thin;
       }
 
       .eventCards {
@@ -1230,322 +1821,11 @@ iframe {
       }
 
       .countdown h5 {
-            font-size: 1.2rem;
-      }
-
-      .time {
-            font-size: 1.4rem;
-            display: flex;
-            padding-left: 20px;
-      }
-
-      #ourColor > h2 {
-            text-align: center;
-            font-size: 1.1rem;
-      }
-
-      #gallery {
-            /* height: 150px; */
-            background-color:#B76E79;
-            text-align: center;
-      }
-
-      #galImage{
-            width: 30px;
-      }
-
-      #gallery h5 {
-            font-family: 'Smooch', cursive;
-            color:rgb(235,180,72);  
-      }
-
-      .eventColor {
-            display: flex;
-            flex-direction: column;
-            /* grid-template-columns: 1fr 1fr; */
-      }
-
-      #maps {
-            background-color: navy;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-      }
-
-      #upperPix {
-            display: flex;
-            justify-content: center;
-            padding-top: 0;
-      }
-      
-      #midPix {
-            justify-content: center;
-      }
-      
-      #midPix img{
-            width: 1020px;
-            display: block;
-            margin: 0;
-      }
-      
-      #lowerPix {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 0;
-      }
-      
-      #lowerPix img {
-            width: 145.5px;
-            cursor: pointer;
-            transition: 0.3s;
-      }
-      
-      #lowerPix img:hover{
-            transform: translateY(-10px);
-      }
-      
-      #upperPix img {
-            width: 145.5px;
-            cursor: pointer;
-            transition: .3s;     
-      }
-      
-      #upperPix img:hover{
-            transform: translateY(10px);
-            opacity: 0.6;
-      }
-}
-
-@media screen and (min-width: 1025px) {
-      body {
-            width: 1150px; 
-            margin: 0 auto;
-            /* border: solid black; */
-      } 
-
-      p {
-            font-family: 'Tapestry', Lobster;
-            padding: 10px 15px;
-      }
-
-      .logo img {
-            width: 37px;
-            height: 37px;
-      }
-     
-      .aboutUs {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background-color:#B76E79;
-            color: #fff;
-      }
-
-      .headList{
-            background: #B76E79;
-            /* position: fixed; */
-            padding: 30px;
-      }
-
-      .menuList {
-            display: inline-block;
-            width: 65%;
-            height: 5vh;
-            z-index: 9;
-            background-color: #B76E79;
-            position:relative;
-            top: 0;
-            left: 0; 
-            transition: none;
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-      }
-
-      .menuIcon {
-            display: none;
-      }
-
-      nav li {
-            list-style: none;
-            display: inline-block;
-            cursor: pointer;
-            padding-right: 15px;
-      }
-
-      nav li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.3rem;
-            font-family: 'Lobster', cursive;
-      }
-
-      nav li a:hover {
-            transform:scaleX(1.9);
-            transition: all ease .3s;
-            color:rgb(235,180,72);
-            text-decoration: underline;
-      }
-
-      #quoteBtn {
-            margin-bottom: 0;
-            margin-top: .2rem;
-      }
-
-      .heroDiv {
-            display: block;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-      }
-
-      .heroQuote {
-            margin-top: 2.5rem;
-      }
-
-      .herotest h3 {
-            padding-top: 5px;
-      }
- 
-      /* .heroimage {
-            padding-left: 10rem;
-      } */
-
-      .modals {
-            width: 500px;
-            border: none;
-            box-shadow: 2px 3px 3px black;
-            display: block;
-            margin-left: 340px;
-            background: #B76E79;
-            border-radius: 10px;
-            display: none;
-            opacity: 0.9;
-      }
-
-      .modals > #close {
-            display:block;
-            background: red;
-            color: #fff;
-            border: none;
-            margin-left: 470px;
-            width: 30px;
-            border-top-right-radius:10px ;
-            font-size: 2rem;
-            cursor: pointer;
-      }
-
-      .modals > #closeBtn {
-            display: none;
-      }
-
-      .aboutText {
-            display: block;
-      }
-
-      .aboutText {
-            text-align: center;
-            margin-top: 2px;
-      }
-
-      .readMoreBtn {
-            border: none;
-            border-radius: 15px;
-            width: 7rem;
-            height: 1.5rem;
-            transition: all ease .55ms;
-            margin-bottom: 0;
-      }
-
-      #relCard {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-top: 0;
-            /* display: block; */
-      }
-
-      .firstdate {
-            margin-top: 4rem;
-      }
-
-      .firstdate  p {
-            padding: 0;
-            font-size: 1rem;
-      }
-
-      .engagement {
-            margin-top: 8rem;
-      }
-
-      .engagement img,
-      .firstdate img,
-      .meeting img  {
-            width:100%;
-      }
-
-     
-      .meeting,
-      .firstdate,
-      .engagement {
-            box-shadow: 2px 4px 3px black;
-            height: 350px;
-      }
-
-      .eventCards {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin: 10px 0;
-            padding: 5px;
-      }
-
-      .eventCards h4 {
-            text-align: center;
-            text-decoration: underline;
-      }
-
-      .bx-church,
-      .bxs-location-plus,
-      .bxs-watch {
-            font-size: 1.7rem;
-      }
-
-      #engage,
-      #church,
-      #reception {
-            width: 370px;
-            box-shadow: 4px 7px 8px black;
-            border-bottom-left-radius: 15px;
-            border-top-right-radius:15px ;
-            background-color: #fff;
-            /* height: 170px; */
-            font-size: 1.3rem;
-            margin: 3px;
-      }
-
-      
-
-      #schedules {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            background-color:navy;
-            color: #fff;
-            height: 5rem;
-      }
-
-      .date {
-            padding-left: 20px;
-            padding-top: 20px;
-            font-family: 'Lobster', cursive;
-      }
-
-     .countdown {
-            padding-top: 20px;
-            font-family: 'Lobster', cursive;
-      }
-
-      .countdown h5 {
             font-size: 1.7rem;
       }
 
       .time {
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             display: flex;
             padding-left: 40px;
       }
@@ -1553,7 +1833,7 @@ iframe {
       .time h1,
       .time h2 {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-family: 'Inconsolata', monospace;
       }
 
@@ -1594,6 +1874,16 @@ iframe {
             justify-content: center;
             padding-top: 0;
       }
+
+      #midline {
+            margin: 0;
+            padding: 0;
+            width: auto;
+      }
+
+      .hline {
+            margin-left: 20vh;
+      }
       
       #midPix {
             justify-content: center;
@@ -1612,7 +1902,7 @@ iframe {
       }
       
       #lowerPix img {
-            width: 164px;
+            width: 22.3vh;
             cursor: pointer;
             transition: 0.3s;
       }
@@ -1622,7 +1912,7 @@ iframe {
       }
       
       #upperPix img {
-            width: 164px;
+            width: 22.3vh;
             cursor: pointer;
             transition: .3s;     
       }
