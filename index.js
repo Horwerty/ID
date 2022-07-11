@@ -29,7 +29,7 @@ qouteButton.addEventListener("click", () => {
 });
 // const modcount = document.querySelector('.countdowwwwn');
 
-console.log(quoteWord);
+// console.log(quoteWord);
 
 window.addEventListener("load", function() {
       this.setTimeout(
