@@ -209,7 +209,7 @@ a:hover{
       margin-top: 5rem;
       margin-left: 58px;
       width: 380px;
-      height: calc(80vh - 38px);
+      /* height: calc(80vh - 38px); */
       border: none;
       /* box-shadow: 2px 3px 3px black; */
       display: block;
