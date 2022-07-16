@@ -248,14 +248,14 @@ p
       color:rgb(206, 155, 54);
       font-family: 'The Nautigal', cursive;
       font-size: 2.5rem;
-      padding: 2rem 0;
+      padding: 1rem 0;
 }
 
 .countdowwwwn {
       font-size: 1.5rem;
       font-family: 'Inconsolata', monospace;
       color: #fff;
-      padding: 2rem 0;
+      padding: 1rem 0;
 }
 
 /* .modalCover {
@@ -804,7 +804,7 @@ footer > h5 {
 }
 
 #lowerPix img {
-      width: 180px;
+      width: 120px;
       height: 25vh;
       cursor: pointer;
       transition: 0.3s;
@@ -954,7 +954,7 @@ iframe {
 
       .modals {
             width: 600px;
-            height: 100vh;
+            /* height: 100vh; */
             border: none;
             box-shadow: 2px 3px 3px black;
             display: block;
@@ -962,8 +962,9 @@ iframe {
             background: rgba(0, 0, 0, 0.648);
             border-radius: 10px;
             display: none;
-            position: absolute;
+            /* position: absolute; */
             opacity: 1;
+            top: 0;
       }
 
       .modals > #close {
@@ -1003,6 +1004,10 @@ iframe {
 
       .swiper-pagination {
             display: none;
+      }
+
+      .swiper-wrapper {
+            position: relative;
       }
 
       .aboutText {
@@ -1314,6 +1319,7 @@ iframe {
       .swiper {
             /* height: 80vh; */
             overflow-x: hidden;
+            position: relative;
       }
       
       .swiper-slide {
@@ -1325,7 +1331,7 @@ iframe {
       .aboutUs {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background-color:#B76E79;
+            background-color: #fff;
             color: #fff;
       }
 
@@ -1407,6 +1413,7 @@ iframe {
 
       .modals {
             width: 595px;
+      
             border: none;
             box-shadow: 2px 3px 3px black;
             display: block;
@@ -1415,6 +1422,7 @@ iframe {
             border-radius: 10px;
             display: none;
             opacity: 0.9;
+            /* position: absolute; */
       }
 
       .modals > #close {
@@ -1461,6 +1469,10 @@ iframe {
             grid-template-columns: 1fr 1fr 1fr;
             margin-top: 0;
             /* display: block; */
+      }
+
+      .swiper-pagination {
+            display: none;
       }
 
       .firstdate {
@@ -1659,7 +1671,7 @@ iframe {
       }
       
       #lowerPix img {
-            width: 206px;
+            width: 192px;
             height: 50vh;
             cursor: pointer;
             transition: 0.3s;
@@ -1681,9 +1693,9 @@ iframe {
       }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
       body {
-            width: 1025px; 
+            width: 1024px; 
             margin: 0 auto;
             /* border: solid black; */
       } 
@@ -1696,6 +1708,10 @@ iframe {
       .logo img {
             width: 60px;
             height: 50px;
+      }
+
+      .swiper-pagination {
+            display: none;
       }
      
       .aboutUs {
@@ -1777,6 +1793,7 @@ iframe {
 
       .modals {
             top:30px;
+            height:550px;
             width: 580px;
             border: none;
             box-shadow: 2px 3px 3px black;
@@ -1786,6 +1803,7 @@ iframe {
             border-radius: 10px;
             display: none;
             opacity: 0.9;
+            /* position: absolute; */
       }
 
       .modals > #close {
