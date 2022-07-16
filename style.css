@@ -17,6 +17,7 @@ html {
 body {
       width: 480px;
       margin: auto;
+      background-color: #fff;
       /* border: solid black; */
 }
 
@@ -45,6 +46,7 @@ p {
 a {
       text-decoration: none;
       font-family: 'Lobster', cursive;
+      color: #B76E79;
 }
 
 a:hover{
@@ -55,8 +57,8 @@ a:hover{
 }
 
 .logo img {
-      width: 30px;
-      height: 30px;
+      width: 50px;
+      height: 50px;
 }
 
 .headList {
@@ -65,13 +67,16 @@ a:hover{
       justify-content: space-between;
       padding: 15px;
       /* position:fixed; */
-      background-color:#B76E79;
+      background-color:#fff;
+      border-bottom: 1px solid black;
+      position: sticky;
+      top: 0;
 }
 
 /* .mobileNav a {
       color: #fff;
-}
-
++++
+p
 .openMobileNav{
       clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
@@ -99,7 +104,7 @@ a:hover{
 
 .menuIcon {
       display: inline-block;
-      font-size:1.5rem;
+      font-size:3rem;
       cursor: pointer;
 } 
 
@@ -111,7 +116,7 @@ a:hover{
       background-color: #B76E79;
       opacity: 0.9;
       position: fixed;
-      top: 50px;
+      top: 83px;
       right: -100%; 
       transition: 1s linear;
       display: flex;
@@ -120,10 +125,11 @@ a:hover{
       align-items: center;
 } 
 
-.menuList a {
-      gap: 1.5rem;
+.menuList  a {
+      gap: 2.5rem;
       color: #fff;
-      margin: 16px 0;
+      margin: 5px 0;
+      font-size: 1.8rem;
 }
 
 .menuList.active {
@@ -136,15 +142,16 @@ a:hover{
 } */
 
 .heroQuote {
-      background-image: linear-gradient( rgba(183, 110, 121, 0.628), rgba(232, 163, 173, 0.653)), url(./img/flowerBg.jpg);
+      background-image:  url(./img/flo2.jpg);
       background-repeat: no-repeat;
       background-size:cover;
+      background-position: static;
       text-align: center;
       display: block;
 }
 
 .herotest h3 {
-      padding-top: 5rem;
+      padding-top: 4rem;
       color: red;
 }
 
@@ -154,15 +161,16 @@ a:hover{
 }
 
 #quoteBtn {
-      width: 5rem;
+      width: 10rem;
       border: none;
-      border-radius: 10px;
+      border-radius: 20px;
       margin-top: 2rem;
       background-color: #B76E79;
       color: #fff;
-      height: 1.7rem;
+      height: 2.5rem;
       cursor: pointer;
       margin-bottom: 20px;
+      font-size: 1.2rem;
 }
 
 #quoteBtn:hover {
@@ -414,12 +422,12 @@ a:hover{
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
       height: 10px;
-      color: #fff;
+      color: navy;
 }
 
-.swiper .swiper-pagination-bullet-active {
+/* .swiper .swiper-pagination-bullet-active {
       background: #fff;
-}
+} */
 
 .aboutText img {
       width: 30px;
@@ -427,21 +435,24 @@ a:hover{
 
 .aboutText {
       text-align: center;
-      background-image: linear-gradient(rgba(152, 102, 110, 0.744), rgba(159, 94, 104, 0.933)), url(./img/flowerBg.jpg);
+      background-image: url(./img/rsvp.jpg);
       background-size: cover;
 }
 
 .aboutText h5 {
       font-family: 'Tapestry', cursive;
-      color:rgb(235,180,72);
-      font-size: 1.3rem;
-      letter-spacing: 15px;
+      color:#fff;
+      padding-top: 25px;
+      font-size: 1.8rem;
+      letter-spacing: 10px;
       text-decoration: wavy;
 }
 
 .aboutText p {
       font-family: 'Lato', sans-serif ;
-      font-weight: 600;
+      font-weight: 500;
+      padding: 7px 0;
+      color: #fff;
 }
 
 .aboutText h4 {
@@ -451,19 +462,19 @@ a:hover{
 .aboutUs {
       /* display: grid;
       grid-template-columns: 1fr 1fr; */
-      background-color: #B76E79;
-      color: #fff;
+      background-color: #fff;
+      color: navy;
       /* height: 10rem; */
 }
 
 #relCard{
-      background-color: #b76e7974;
+      background-color: #fff;
       margin-top: 10px;
 }
 
 
 .eventCards {
-      background-color: #b76e7974;
+      background-color: #fff;
       text-align: center;
       padding: 10px;
 }
@@ -477,6 +488,7 @@ a:hover{
 
 .loveStory {
       text-align: center;
+      background-image: url(./img/flo2.jpg);
       /* display: flex;
       flex-direction: column; */
 }
@@ -575,7 +587,9 @@ a:hover{
 
 .date {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      padding: 10px 0;
+      /* margin-bottom: 10px; */
 }
 
 .date > h3 {
@@ -583,9 +597,11 @@ a:hover{
 }
 
 .countdown {
+      /* margin-top: 50px; */
       display: flex;
-      /* padding-top: 0; */
-      background: #B76E79;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #fff;
       animation: colorchange 2s linear 2s infinite alternate-reverse;
 }
 
@@ -599,7 +615,7 @@ a:hover{
       }
 
       20% {
-            background-color: navy;
+            background-color: #fff;
       }
 
       30% {
@@ -640,15 +656,15 @@ a:hover{
 
 .time h1,
 .time h2 {
-      color: #fff;
-      font-size: 1rem;
+      color: navy;
+      font-size: 1.2rem;
       font-family: 'Inconsolata', monospace;
 }
 
 .countdown > h5 {
       padding-top:4px;
       padding-left: 10px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-family: 'Lobster', cursive;
       
 }
@@ -663,7 +679,8 @@ a:hover{
 
 #gallery {
       margin-top: 5px;
-      background-color: #B76E79;
+      background-color:#fff;
+      display: block;
 }
 
 #galImage{
@@ -686,6 +703,7 @@ a:hover{
       /* height: 170px; */
       font-size: 1.3rem;
       margin: 5px;
+      line-height: 2.1rem;
     
 }
 
@@ -741,8 +759,8 @@ a:hover{
 }
 
 footer {
-      padding-top: 15px;
-      background-color: #B76E79;
+      padding-top: 5px;
+      background-color: #fff;
       position: sticky;
       bottom: 0;
       display: block;
@@ -785,7 +803,7 @@ footer > h5 {
 }
 
 #lowerPix img {
-      width: 68.5px;
+      width: 21vh;
       cursor: pointer;
       transition: 0.3s;
 }
@@ -830,8 +848,8 @@ iframe {
       .aboutUs {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background-color:#B76E79;
-            color: #fff;
+            background-color:#fff;
+            color: navy;
       }
 
       .aboutText h5, p {
@@ -839,8 +857,9 @@ iframe {
       }
 
       .headList{
-            background: #B76E79;
-            /* position: fixed; */
+            background: #fff;
+            position: sticky;
+            top: 0;
             padding: 10px;
       }
 
@@ -849,7 +868,7 @@ iframe {
             width: 65%;
             height: 5vh;
             z-index: 9;
-            background-color: #B76E79;
+            background-color: #fff;
             position:relative;
             top: 0;
             left: 0; 
@@ -872,9 +891,12 @@ iframe {
 
       nav li a {
             text-decoration: none;
-            color: #fff;
-            font-size: 0.8rem;
             font-family: 'Lobster', cursive;
+      }
+
+      .menuList  a {
+            color: navy;
+            font-size: 0.7rem;
       }
 
       nav li a:hover {
@@ -885,9 +907,10 @@ iframe {
       }
 
       .heroQuote {
-            background-image: linear-gradient( rgba(183, 110, 121, 0.628), rgba(232, 163, 173, 0.653)), url(./img/flowerBg.jpg);
+            background-image:url(./img/flo2.jpg);
             background-repeat: no-repeat;
-            background-size:contain;
+            background-size:cover;
+            background-position: center;
             text-align: center;
       }
 
@@ -937,7 +960,8 @@ iframe {
             background: rgba(0, 0, 0, 0.648);
             border-radius: 10px;
             display: none;
-            opacity: 0.9;
+            position: absolute;
+            opacity: 1;
       }
 
       .modals > #close {
@@ -975,13 +999,30 @@ iframe {
             /* object-fit: contain; */
       }
 
+      .swiper-pagination {
+            display: none;
+      }
+
       .aboutText {
             display: block;
       }
 
       .aboutText {
             text-align: center;
-            margin-top: 2px;
+            background-image: url(./img/rsvp.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+      }
+
+      .aboutText {
+            text-align: center;
+            margin-top: 0;
+      }
+
+      .aboutText h5 {
+            margin-top: 4rem;
+            text-decoration: underline;
       }
 
       .readMoreBtn {
@@ -1010,9 +1051,9 @@ iframe {
       }
 
       .ifeoluwa p {
-            padding: 5px;
-            line-height: 14.5px;
-            font-size: 0.7rem;
+            padding:12px 2px;
+            line-height: 16px;
+            font-size: 0.8rem;
       }
 
       .doyin p {
@@ -1029,6 +1070,8 @@ iframe {
 
       .ife p {
             padding: 7px 5px;
+            line-height: 8.7px;
+            font-size: 0.6rem;
       }
 
       #pDiv p {
@@ -1145,11 +1188,12 @@ iframe {
 
      .countdown {
             padding-top: 20px;
+            padding-bottom:15px;
             font-family: 'Lobster', cursive;
       }
 
       .countdown h5 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
       }
 
       .time {
@@ -1165,8 +1209,10 @@ iframe {
 
       #gallery {
             /* height: 150px; */
-            background-color:#B76E79;
+            background-color:#fff;
+            background-image: url(./img/flo2.jpg);
             text-align: center;
+            display: block;
       }
 
       #galImage{
@@ -1220,8 +1266,8 @@ iframe {
       }
       
       #lowerPix img {
-            width: 108.3px;
-            height: 230px;
+            width: 200px;
+            height: 45vh;
             cursor: pointer;
             transition: 0.3s;
             object-fit: cover;
@@ -1259,8 +1305,8 @@ iframe {
       }
 
       .logo img {
-            width: 47px;
-            height: 40px;
+            width: 55px;
+            height: 45px;
       }
 
       .swiper {
@@ -1287,9 +1333,9 @@ iframe {
       }
 
       .headList{
-            background: #B76E79;
+            background: #fff;
             /* position: fixed; */
-            padding: 20px;
+            padding: 15px;
       }
 
       .menuList {
@@ -1297,7 +1343,7 @@ iframe {
             width: 65%;
             height: 5vh;
             z-index: 9;
-            background-color: #B76E79;
+            background-color: #fff;
             position:relative;
             top: 0;
             left: 0; 
@@ -1318,9 +1364,9 @@ iframe {
             padding-right: 10px;
       }
 
-      nav li a {
+      .menuList a {
             text-decoration: none;
-            color: #fff;
+            color: navy;
             font-size: 0.8rem;
             font-family: 'Lobster', cursive;
       }
@@ -1385,13 +1431,18 @@ iframe {
             display: none;
       }
 
-      .aboutText {
-            display: block;
+      .aboutText h4 {
+            color: navy;
+      }
+
+      .aboutText h5 {
+            font-size: 1.5rem;
+            padding-top: 2rem;
       }
 
       .aboutText {
             text-align: center;
-            margin-top: 2px;
+            display: block;
       }
 
       .readMoreBtn {
@@ -1437,8 +1488,9 @@ iframe {
       }
 
       .ifeoluwa p {
-            padding: 0.5rem 5px;
+            padding: 0.5rem 3px;
             font-size: 0.7rem;
+            line-height: 1.2rem;
       }
 
       .doyin p {
@@ -1510,6 +1562,7 @@ iframe {
             /* height: 170px; */
             font-size: 1.3rem;
             margin: 3px;
+            padding: 20px;
       }
 
       
@@ -1534,7 +1587,7 @@ iframe {
       }
 
       .countdown h5 {
-            font-size: 1.2rem;
+            font-size: 1rem;
       }
 
       .time {
@@ -1550,7 +1603,7 @@ iframe {
 
       #gallery {
             /* height: 150px; */
-            background-color:#B76E79;
+            background-image: url(./img/flo2.jpg);
             text-align: center;
       }
 
@@ -1604,7 +1657,8 @@ iframe {
       }
       
       #lowerPix img {
-            width: 19.2vh;
+            width: 206px;
+            height: 50vh;
             cursor: pointer;
             transition: 0.3s;
       }
@@ -1614,7 +1668,7 @@ iframe {
       }
       
       #upperPix img {
-            width: 19.2vh;
+            
             cursor: pointer;
             transition: .3s;     
       }
@@ -1638,19 +1692,19 @@ iframe {
       }
 
       .logo img {
-            width: 57px;
-            height: 47px;
+            width: 60px;
+            height: 50px;
       }
      
       .aboutUs {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background-color:#B76E79;
-            color: #fff;
+            background-image: url(./img/flo2.jpg);
+            color: navy;
       }
 
       .headList{
-            background: #B76E79;
+            background: #fff;
             /* position: fixed; */
             padding: 30px;
       }
@@ -1660,7 +1714,7 @@ iframe {
             width: 65%;
             height: 5vh;
             z-index: 9;
-            background-color: #B76E79;
+            background-color: #fff;
             position:relative;
             top: 0;
             left: 0; 
@@ -1681,9 +1735,9 @@ iframe {
             padding-right: 15px;
       }
 
-      nav li a {
+      .menuList a {
             text-decoration: none;
-            color: #fff;
+            color: navy;
             font-size: 1.1rem;
             font-family: 'Lobster', cursive;
       }
@@ -1779,8 +1833,8 @@ iframe {
       }
 
       .aboutText p {
-            padding-top: 4rem;
-            font-size: 1.2rem;
+            padding-top: 1rem;
+            font-size: 1.1rem;
       }
 
       .readMoreBtn {
@@ -1897,6 +1951,7 @@ iframe {
             /* height: 170px; */
             font-size: 1.3rem;
             margin: 3px;
+            padding: 20px;
       }
 
       
@@ -2002,7 +2057,8 @@ iframe {
       }
       
       #lowerPix img {
-            width: 22.3vh;
+            width: 256px;
+            height: 50vh;
             cursor: pointer;
             transition: 0.3s;
       }
